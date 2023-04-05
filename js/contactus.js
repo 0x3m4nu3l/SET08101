@@ -11,7 +11,7 @@ submit.addEventListener('submit',(e)=>{
     `;
 
     Email.send({
-        SecureToken : "a5b5a46a-70db-46f1-9b54-ddaf8e3dedcb", //add your token here
+        SecureToken : "cd70f837-5c43-4535-9646-428b42a1840f", //add your token here
         To : 'mario.lee.rossi@gmail.com', 
         From : '',
         Subject : "The Italian Way query",
