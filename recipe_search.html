@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes Search</title>
+    
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/recipe_search.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="The italian way" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="btn" class="nav-link"> Home </a>
+            <a href="about.html" class="btn" class="nav-link"> About us </a>
+            <a href="recipes.html" class="btn" class="nav-link"> Autentic Recipes </a>
+            <a href="recipe_search.html" class="btn" class="nav-link"> Recipes Search  </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact us</a> 
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- end of nav -->
+    <main class="page">
+      <section class="about-page">
+        <article>
+          <p>
+          </p>
+          
+          <h2> Edamam API-Powered Search Bar</h2>
+          <p> 
+            We're excited to announce a new feature that makes it even easier for you to find the perfect recipe for your next meal. 
+            Our website now includes a search bar that is powered by the Edamam API. 
+          <p>
+            With the Edaamame API, you can search through thousands of Italian recipes quickly and easily. Simply type in an ingredient or dish name, 
+            and our search bar will return a list of relevant recipes. Whether you're in the mood for pasta, pizza, or a delicious risotto, 
+            you're sure to find something that will fit your tastes.
+          </p>
+          
+        </article>
+
+        <!-- needs fixes -->
+
+        <img
+          src="./assets/italian-dishes.webp"
+          alt="Fresh Ingredients"
+          class="img about-img"
+        />
+      </section>
+      
+
+
+      <section class="featured-recipes">
+        <h5 class="featured-title">Search billion of Recipes</h5>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for recipes...">
+        <button type="submit" id="search-btn" class="btn" >Search</button>
+        <button id="suggest-btn" class="btn" >Suggest Me</button>
+      </form>
+      <main>
+        <div id="results"></div>
+        <button id="load-more-btn" style="display: none;">Load More</button>
+      </main>  
+    <script src="/js/recipe_search.js"></script>
+  </body>
+</html>
